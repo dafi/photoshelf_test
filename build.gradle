@@ -15,6 +15,13 @@ test {
         // Show that tests are run in the command-line output
         // events 'started', 'passed'
     }
+    doLast {
+        println "**************************************************"
+        println "**************************************************"
+        println "****** Open results at file://" + file("build/reports/tests/index.html").absolutePath
+        println "**************************************************"
+        println "**************************************************"
+    }
 }
 
 defaultTasks 'clean',  'test'
