@@ -19,6 +19,8 @@ popd
 pushd src/main/java/com/ternaryop/utils/
 ln -s ../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/String* .
 ln -s ../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/JSONUtils* .
+ln -s ../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/URLUtils.java .
+ln -s ../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/IOUtils.java .
 popd
 
 pushd app/src/main/
