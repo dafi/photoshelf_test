@@ -13,6 +13,7 @@ popd
 
 pushd src/main/java/com/ternaryop/photoshelf/parsers
 ln -s ../../../../../../../../photoshelf/app/src/main/java/com/ternaryop/photoshelf/parsers/Title* .
+ln -s ../../../../../../../../photoshelf/app/src/main/java/com/ternaryop/photoshelf/parsers/*Location* .
 ln -s ../../../../../../../../photoshelf/app/src/main/java/com/ternaryop/photoshelf/parsers/JSONTitleParserConfig.java .
 popd
 
