@@ -3,9 +3,12 @@
 # This project doesn't contain its own source files
 
 mkdir -p src/main/java/com/ternaryop/photoshelf/parsers
-mkdir -p src/main/java/com/ternaryop/photoshelf/util/date
 mkdir -p src/test/java/com/ternaryop/photoshelf
-mkdir -p src/main/java/com/ternaryop/utils
+mkdir -p src/main/java/com/ternaryop/utils/date
+mkdir -p src/main/java/com/ternaryop/utils/json
+mkdir -p src/main/java/com/ternaryop/utils/text
+mkdir -p src/main/java/com/ternaryop/utils/network
+mkdir -p src/main/java/com/ternaryop/utils/io
 mkdir -p app/src/main
 
 pushd src/test/java/com/ternaryop/photoshelf
@@ -19,15 +22,13 @@ ln -s ../../../../../../../../photoshelf/app/src/main/java/com/ternaryop/photosh
 ln -s ../../../../../../../../photoshelf/app/src/main/java/com/ternaryop/photoshelf/parsers/JSONTitleParserConfig* .
 popd
 
-pushd src/main/java/com/ternaryop/photoshelf/util/date
-ln -s ../../../../../../../../../photoshelf/app/src/main/java/com/ternaryop/photoshelf/util/date/*
-popd
-
 pushd src/main/java/com/ternaryop/utils/
-ln -s ../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/String* .
-ln -s ../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/JSONUtils* .
-ln -s ../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/URLUtils* .
-ln -s ../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/IOUtils* .
+ln -s ../../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/date/Calendar.kt date/
+ln -s ../../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/text/Html.kt text/
+ln -s ../../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/text/Unicode.kt text/
+ln -s ../../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/json/File.kt json/
+ln -s ../../../../../../../../commonutils/app/src/main/java/com/ternaryop/utils/network/Resolver.kt network/
+ln -s ../../../../../../../../commonutils/app//src/main/java/com/ternaryop/utils/io/IOUtils.kt io/
 popd
 
 pushd app/src/main/
